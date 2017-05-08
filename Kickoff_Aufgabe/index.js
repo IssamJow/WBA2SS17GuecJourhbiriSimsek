@@ -1,7 +1,7 @@
 //extra zeile für merge zu loesen
 var fs = require('fs');
 var chalk = require('chalk');
-var bigcities =[];
+var bigcities = [];
 
 fs.readFile(__dirname + "/staedte.json","utf-8",function(err, data)
 {
@@ -14,7 +14,7 @@ fs.readFile(__dirname + "/staedte.json","utf-8",function(err, data)
 
         for (var text2 in obj) 
         {   
-            var x = {"name":obj[text2].name, "stadt":obj[text2].country, "hoehe":obj[text2].population };
+            var x = {"name":obj[text2].name, "stadt":obj[text2].country, "population":obj[text2].population };
             bigcities.push(x);
 
                   
@@ -41,11 +41,10 @@ fs.readFile(__dirname + "/staedte.json","utf-8",function(err, data)
    
             for (var text3 in y) 
         {
-      
                 var obj2 = y[text3];
 
                     console.log(chalk.yellow( "Name: " + obj2.name));
-                    console.log("Country: " + obj2.country);
+                    console.log("Country: " + obj2.stadt);
                     console.log(chalk.red ("Population: " + obj2.population));
                     console.log("---------------------------------");
         }    
