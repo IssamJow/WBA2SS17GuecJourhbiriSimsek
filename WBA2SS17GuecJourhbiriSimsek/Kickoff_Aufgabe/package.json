@@ -1,0 +1,16 @@
+{
+  "name": "wba2ss17",
+  "version": "1.0.0",
+  "description": "wba2 ss 17",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Issam Jourhbiri",
+  "license": "ISC"
+}
