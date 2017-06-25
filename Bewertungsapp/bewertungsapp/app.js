@@ -9,13 +9,33 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
+// GET-Methoden
 app.get('/bewertungen', function (req, res){
     res.send('GET Bewertungen zum Professor');
 });
+app.get('/professor', function (req, res){
+    res.send('GET die vorhandene Professoren');
+});
+app.get('/wiss_mitarbeiter', function (req, res){
+    res.send('GET die vorhandene Mitarbeitern');
+});
+app.get('/tutor', function (req, res){
+    res.send('GET die vorhandene Tutoren');
+});
 
+
+// POST-Methoden
 app.post('/', function (req, res){
     res.send('POST Bewertungen zum Professor')
+});
+app.post('/professor', function (req, res){
+    res.send('Neuen Professor anlegen')
+});
+app.post('/wiss_mitarbeiter', function (req, res){
+    res.send('Neuen Mitarbeiter anlegen')
+});
+app.post('/tutor', function (req, res){
+    res.send('Neuen Tutor anlegen')
 });
 
 
