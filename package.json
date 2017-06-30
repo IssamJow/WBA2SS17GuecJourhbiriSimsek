@@ -1,0 +1,23 @@
+{
+  "name": "wba",
+  "version": "1.0.0",
+  "description": "Package json fuer wba2",
+  "main": "code.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IssamJow/WBA2SS17GuecJourhbiriSimsek.git"
+  },
+  "author": "Issam, Koray, Mustafa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IssamJow/WBA2SS17GuecJourhbiriSimsek/issues"
+  },
+  "homepage": "https://github.com/IssamJow/WBA2SS17GuecJourhbiriSimsek#readme"
+}
