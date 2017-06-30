@@ -25,7 +25,9 @@ app.use(function (req, res, next) {
 const user = require('./user');
 // mounten des Routers für "user" an die main App
 app.use("/user", user);
-
+//To-DO: das Selbe was hier vorkommt, für Professoren usw noch machen 
+// Dozenten fragen: ob wir Json datein zum Speichern von Professoren, wiss_Mitarbeiter und tutoren erstellen müssen 
+//und das mit FS module bearbeiten?
 // Get Request auf pfad "/"
 app.get("/", function(req,res) {
     res.send("Get Hello Darling!");
