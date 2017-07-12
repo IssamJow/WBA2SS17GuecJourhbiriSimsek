@@ -1,0 +1,86 @@
+{
+    "professoren": [
+        {
+            "name": "Max, Mustermann"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "EBR, TI, AP1"
+            , "raum": 3.102
+            , "id": 1
+    }
+        , {
+            "name": "Julia, Neumann"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI ,AI"
+            , "module": "TI1,TI2"
+            , "raum": 3.222
+            , "id": 2
+    }
+        , {
+            "name": "Andreas, Günther"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "BWL1"
+            , "raum": 2.107
+            , "id": 3
+    }
+        , {
+            "name": "Bettina, Reichert"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "BWL2"
+            , "raum": 3.101
+            , "id": 4
+    }
+        , {
+            "name": "Simon, Puffert"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "GDVK, WBA1"
+            , "raum": 3.112
+            , "id": 5
+    }
+        , {
+            "name": "Alexandra, Fischbach"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "DB1"
+            , "raum": 2.001
+            , "id": 6
+    }
+        , {
+            "name": "Jens, Friedrich"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI, AI"
+            , "module": "AP2, CGA"
+            , "raum": 3.202
+            , "id": 7
+    }
+        , {
+            "name": "Lena, Meier"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "AVM, MTP"
+            , "raum": 3.117
+            , "id": 8
+    }
+        , {
+            "name": "Lennard, Heister"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "BS"
+            , "raum": 3.224
+            , "id": 9
+    }
+        , {
+            "name": "Lisa, Werner"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "MUG"
+            , "raum": 3.220
+            , "id": 10
+    },
+
+
+  ]
+}

@@ -9,6 +9,9 @@ var expressSession = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var professor = require('./personen/professor');
+var tutor = require('./personen/tutor');
+var wiss_Mit = require('./personen/wiss_Mit');
 
 var app = express();
 
@@ -38,6 +41,9 @@ app.use(expressSession({secret: 'max', saveUninitialized: false, resave:false}))
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/professor', professor);
+app.use('/tutor', tutor);
+app.use('/wiss_Mit', wiss_Mit);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

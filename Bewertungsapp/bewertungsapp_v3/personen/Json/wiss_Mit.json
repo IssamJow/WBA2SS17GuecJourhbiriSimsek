@@ -1,0 +1,86 @@
+{
+  "wiss_Mit":[
+    {
+            "name": "Petra Steffen"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "EBR, TI, AP1"
+            , "raum": 3.104
+            , "id": 21
+    }
+        , {
+            "name": "Simone Beckmann"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI ,AI"
+            , "module": "TI1,TI2"
+            , "raum": 3.224
+            , "id": 22
+    }
+        , {
+            "name": "Anton Tiroler"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "BWL1"
+            , "raum": 2.109
+            , "id": 23
+    }
+        , {
+            "name": "Berd Adams"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "BWL2"
+            , "raum": 3.103
+            , "id": 24
+    }
+        , {
+            "name": "Dennis Dünn"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "GDVK, WBA1"
+            , "raum": 3.114
+            , "id": 25
+    }
+        , {
+            "name": "Helene Müller"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "DB1"
+            , "raum": 2.003
+            , "id": 26
+    }
+        , {
+            "name": "Verena Zimmermann"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI, AI"
+            , "module": "AP2, CGA"
+            , "raum": 3.204
+            , "id": 27
+    }
+        , {
+            "name": "Werner Lottner"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "AVM, MTP"
+            , "raum": 3.119
+            , "id": 28
+    }
+        , {
+            "name": "Maria Lehmann"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "BS"
+            , "raum": 3.226
+            , "id": 29
+    }
+        , {
+            "name": "Luisa Riether"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "MUG"
+            , "raum": 3.222
+            , "id": 30
+    },
+
+
+  ]
+}
