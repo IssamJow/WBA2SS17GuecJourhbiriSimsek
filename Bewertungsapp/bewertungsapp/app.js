@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require ("fs");
 
-global.data = require("./data");
+//global.data = require("./data");
 
 var app = express();
 
