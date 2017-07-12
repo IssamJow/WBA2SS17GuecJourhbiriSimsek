@@ -1,37 +1,86 @@
 {
   "tutoren":[
         {
-            "name": "Max, Tutor",
-            "fakultaet": 10,
-            "studiengaenge": "MI, WI",
-            "module": "EBR, TI, AP1",
-            "raum": 3.131
+            "name": "Dennis, Tischler"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "EBR, TI, AP1"
+            , "raum": 3.103
+            , "id": 11
+    }
+        , {
+            "name": "Dominik, Tischler"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI ,AI"
+            , "module": "TI1,TI2"
+            , "raum": 3.223
+            , "id": 12
+    }
+        , {
+            "name": "Svenja, Niedermeier"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "BWL1"
+            , "raum": 2.108
+            , "id": 13
+    }
+        , {
+            "name": "Claudia, Müller"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "BWL2"
+            , "raum": 3.102
+            , "id": 14
+    }
+        , {
+            "name": "Tom, Gutenberg"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "GDVK, WBA1"
+            , "raum": 3.113
+            , "id": 15
+    }
+        , {
+            "name": "Siegfried, Deisler"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI"
+            , "module": "DB1"
+            , "raum": 2.002
+            , "id": 16
+    }
+        , {
+            "name": "Sebastian, Bauer"
+            , "fakultaet": 10
+            , "studiengaenge": "MI, WI, AI"
+            , "module": "AP2, CGA"
+            , "raum": 3.203
+            , "id": 17
+    }
+        , {
+            "name": "Erika, Neubach"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "AVM, MTP"
+            , "raum": 3.118
+            , "id": 18
+    }
+        , {
+            "name": "Tina, Lauterbach"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "BS"
+            , "raum": 3.225
+            , "id": 19
+    }
+        , {
+            "name": "Christina, Dietrich"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "module": "MUG"
+            , "raum": 3.221
+            , "id": 20
     },
-         {
-            "name": "Felix, Tutorius",
-            "fakultaet": 12,
-            "studiengaenge": "WI",
-            "module": "EBR, AP1, AP2",
-            "raum": 3.231
-     },
-         {
-            "name": "Günther, Tortu",
-            "fakultaet": 9,
-            "studiengaenge": "MI, AI",
-            "module": "EMI, TI, AP3",
-            "raum": 3.191
-     },
-         {
-            "name": "Franz, Tutnix",
-            "fakultaet": 11,
-            "studiengaenge": "MI, WI, AI",
-            "module": "EBR, TI, TI2, TI3, AP1",
-            "raum": 2.222
-     },
-         {
-            "name": "Rüdiger, Tutorinther",
-            "fakultaet": 31,
-            "studiengaenge": "AI, BI, CI, MI, WI",
-            "module": "EBR, TI, AP1",
-            "raum": 3.131
-    },
+
+
+  ]
+}
