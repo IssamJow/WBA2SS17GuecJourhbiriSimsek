@@ -10,25 +10,10 @@ var professoren = [];
 /* GET Professors listing. */
 router.get('/', function (req, res, next) {
             res.send("Zeige alle Professoren");
-            fs.readFile(__dirname + "/professoren.json", "utf-8", function (err, data) {
-                var content = JSON.parse(data);
-
-
-                for (var text in content) {
-                    var obj = content[text];
-
-                    for (var text2 in obj) {
-                        var x = {
-                            "Name": obj[text2].name,
-                            "Fakultaet": obj[text2].fakultaet,
-                            "Studiengaenge": obj[text2].studiengaenge,
-                            "Module": obj[text2].module,
-                            "Raum": obj[text2].raum
-                        };
-                        professoren.push(x);
-                    }
-                }
-                console.log(professoren);
+            fs.readFile(__dirname + "/Json/professoren.json", "utf-8", function (err, data) {
+               
+              if (err) throw err;
+                console.log(data)
                 
             });
     
