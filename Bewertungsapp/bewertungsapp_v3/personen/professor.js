@@ -36,7 +36,55 @@ router.post('/', bodyParser.json(), function (req, res) {
 });
 router.get("/:professorId", function (req, res) {
     res.send("Repräsentation eines Professors mit der ID: " + req.params.professorId);
+      fs.readFile(__dirname + "/Json/professoren.json", "utf-8", function (err, data) {
+        
+        var content = JSON.parse(data);
+        
+        for(i=0; i<content.professoren.length;i++)
+            {
+                if ( req.params.professorId == content.professoren[i].id)
+                    {
+                console.log("Name: " +chalk.red(content.professoren[i].name));
+                console.log("Fakultät: " +chalk.cyan(content.professoren[i].fakultaet));
+                console.log("Studiengänge: " +chalk.red(content.professoren[i].studiengaenge));
+                console.log("Module: " +chalk.red(content.professoren[i].module));
+                console.log("Raum: " +chalk.red(content.professoren[i].raum));
+                console.log("ID: " +chalk.red(content.professoren[i].id));
+                        break;
+                    }
+            
+            }
+
+       
 });
+    
+});
+/*router.get("/:professorName", function (req, res) {
+    res.send("Repräsentation eines Professors mit der Name: " + req.params.professorName);
+      fs.readFile(__dirname + "/Json/professoren.json", "utf-8", function (err, data) {
+        
+        var content = JSON.parse(data);
+        
+        for(i=0; i<content.professoren.length;i++)
+            {
+                if ( req.params.professorName == content.professoren[i].name)
+                    {
+                console.log("Name: " +chalk.red(content.professoren[i].name));
+                console.log("Fakultät: " +chalk.cyan(content.professoren[i].fakultaet));
+                console.log("Studiengänge: " +chalk.red(content.professoren[i].studiengaenge));
+                console.log("Module: " +chalk.red(content.professoren[i].module));
+                console.log("Raum: " +chalk.red(content.professoren[i].raum));
+                console.log("ID: " +chalk.red(content.professoren[i].id));
+                        break;
+                    }
+            
+            }
+
+       
+});
+    
+});*/
+
 
 
 module.exports = router;

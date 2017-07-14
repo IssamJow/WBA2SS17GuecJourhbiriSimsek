@@ -17,6 +17,7 @@ router.get('/', function (req, res, next) {
         
         for(i=0; i<content.wiss_Mit.length;i++)
             {
+                
                 console.log("Name: " +chalk.red(content.wiss_Mit[i].name));
                 console.log("Fakultät: " +chalk.cyan(content.wiss_Mit[i].fakultaet));
                 console.log("Studiengänge: " +chalk.red(content.wiss_Mit[i].studiengaenge));
@@ -35,6 +36,27 @@ router.post('/', bodyParser.json(), function (req, res) {
 });
 router.get("/:wissId", function (req, res) {
     res.send("Repräsentation eines wissenschaftlicher Mitarbeiter mit der ID: " + req.params.wissId);
+    fs.readFile(__dirname + "/Json/wiss_Mit.json", "utf-8", function (err, data) {
+        
+        var content = JSON.parse(data);
+        
+        for(i=0; i<content.wiss_Mit.length;i++)
+            {
+                if ( req.params.wissId == content.wiss_Mit[i].id)
+                    {
+                console.log("Name: " +chalk.red(content.wiss_Mit[i].name));
+                console.log("Fakultät: " +chalk.cyan(content.wiss_Mit[i].fakultaet));
+                console.log("Studiengänge: " +chalk.red(content.wiss_Mit[i].studiengaenge));
+                console.log("Module: " +chalk.red(content.wiss_Mit[i].module));
+                console.log("Raum: " +chalk.red(content.wiss_Mit[i].raum));
+                console.log("ID: " +chalk.red(content.wiss_Mit[i].id));
+                        break;
+                    }
+            
+            }
+
+       
+});
 });
 
 
