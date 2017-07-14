@@ -1,17 +1,17 @@
 /*
-Professoren
+Bewertungen
 */
 var express = require('express');
 var router = express.Router();
 const bodyParser = require('body-parser');
 var fs = require('fs');
 var chalk = require('chalk');
-var professoren = [];
+var bewertungen = [];
 
-/* GET Professors listing. */
+/* GET Bewertungen listing. */
 router.get('/', function (req, res, next) {
-    res.send("Zeige alle Professoren");
-    fs.readFile(__dirname + "/Json/professoren.json", "utf-8", function (err, data) {
+    res.send("Zeige alle Bewertungen");
+    fs.readFile(__dirname + "/Json/bewertungen.json", "utf-8", function (err, data) {
         
         var content = JSON.parse(data);
         
