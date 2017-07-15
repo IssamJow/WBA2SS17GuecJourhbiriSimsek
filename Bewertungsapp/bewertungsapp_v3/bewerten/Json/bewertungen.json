@@ -1,5 +1,5 @@
 {
-    "wiss_Mit": [
+    "bewertungen": [
         {
             "name": "Petra Steffen"
             , "fakultaet": 10
@@ -7,6 +7,7 @@
             , "module": "EBR, TI, AP1"
             , "raum": 3.104
             , "id": 21
+            , "stelle": "wiss_Mit"
             , "kommentar": ""
     }
         , {
@@ -16,6 +17,7 @@
             , "module": "TI1,TI2"
             , "raum": 3.224
             , "id": 22
+            , "stelle": "wiss_Mit"
             , "kommentar": ""
     }
         , {
@@ -25,260 +27,10 @@
             , "module": "BWL1"
             , "raum": 2.109
             , "id": 23
+            , "stelle": "wiss_Mit"
             , "kommentar": ""
     }
-        , {
-            "name": "Berd Adams"
-            , "fakultaet": 10
-            , "studiengaenge": "MI, WI"
-            , "module": "BWL2"
-            , "raum": 3.103
-            , "id": 24
-            , "kommentar": ""
-    }
-        , {
-            "name": "Dennis Dünn"
-            , "fakultaet": 10
-            , "studiengaenge": "MI"
-            , "module": "GDVK, WBA1"
-            , "raum": 3.114
-            , "id": 25
-            , "kommentar": ""
-    }
-        , {
-            "name": "Helene Müller"
-            , "fakultaet": 10
-            , "studiengaenge": "MI, WI"
-            , "module": "DB1"
-            , "raum": 2.003
-            , "id": 26
-            , "kommentar": ""
-    }
-        , {
-            "name": "Verena Zimmermann"
-            , "fakultaet": 10
-            , "studiengaenge": "MI, WI, AI"
-            , "module": "AP2, CGA"
-            , "raum": 3.204
-            , "id": 27
-            , "kommentar": ""
-    }
-        , {
-            "name": "Werner Lottner"
-            , "fakultaet": 10
-            , "studiengaenge": "MI"
-            , "module": "AVM, MTP"
-            , "raum": 3.119
-            , "id": 28
-            , "kommentar": ""
-    }
-        , {
-            "name": "Maria Lehmann"
-            , "fakultaet": 10
-            , "studiengaenge": "MI"
-            , "module": "BS"
-            , "raum": 3.226
-            , "id": 29
-            , "kommentar": ""
-    }
-        , {
-            "name": "Luisa Riether"
-            , "fakultaet": 10
-            , "studiengaenge": "MI"
-            , "module": "MUG"
-            , "raum": 3.222
-            , "id": 30
-            , "kommentar": ""
-    }
-
-
-  ] ,
-        "professoren": [
-            {
-                "name": "Max, Mustermann"
-                , "fakultaet": 10
-                , "studiengaenge": "MI, WI"
-                , "module": "EBR, TI, AP1"
-                , "raum": 3.102
-                , "id": 1
-                , "kommentar": ""
-    }
-        , {
-                "name": "Julia, Neumann"
-                , "fakultaet": 10
-                , "studiengaenge": "MI, WI ,AI"
-                , "module": "TI1,TI2"
-                , "raum": 3.222
-                , "id": 2
-                , "kommentar": ""
-    }
-        , {
-                "name": "Andreas, Günther"
-                , "fakultaet": 10
-                , "studiengaenge": "MI, WI"
-                , "module": "BWL1"
-                , "raum": 2.107
-                , "id": 3
-                , "kommentar": ""
-    }
-        , {
-                "name": "Bettina, Reichert"
-                , "fakultaet": 10
-                , "studiengaenge": "MI, WI"
-                , "module": "BWL2"
-                , "raum": 3.101
-                , "id": 4
-                , "kommentar": ""
-    }
-        , {
-                "name": "Simon, Puffert"
-                , "fakultaet": 10
-                , "studiengaenge": "MI"
-                , "module": "GDVK, WBA1"
-                , "raum": 3.112
-                , "id": 5
-                , "kommentar": ""
-    }
-        , {
-                "name": "Alexandra, Fischbach"
-                , "fakultaet": 10
-                , "studiengaenge": "MI, WI"
-                , "module": "DB1"
-                , "raum": 2.001
-                , "id": 6
-                , "kommentar": ""
-    }
-        , {
-                "name": "Jens, Friedrich"
-                , "fakultaet": 10
-                , "studiengaenge": "MI, WI, AI"
-                , "module": "AP2, CGA"
-                , "raum": 3.202
-                , "id": 7
-                , "kommentar": ""
-    }
-        , {
-                "name": "Lena, Meier"
-                , "fakultaet": 10
-                , "studiengaenge": "MI"
-                , "module": "AVM, MTP"
-                , "raum": 3.117
-                , "id": 8
-                , "kommentar": ""
-    }
-        , {
-                "name": "Lennard, Heister"
-                , "fakultaet": 10
-                , "studiengaenge": "MI"
-                , "module": "BS"
-                , "raum": 3.224
-                , "id": 9
-                , "kommentar": ""
-    }
-        , {
-                "name": "Lisa, Werner"
-                , "fakultaet": 10
-                , "studiengaenge": "MI"
-                , "module": "MUG"
-                , "raum": 3.220
-                , "id": 10
-                , "kommentar": ""
-    }
-
-
-  ] ,
-            "tutoren": [
-                {
-                    "name": "Dennis, Tischler"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI, WI"
-                    , "module": "EBR, TI, AP1"
-                    , "raum": 3.103
-                    , "id": 11
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Dominik, Tischler"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI, WI ,AI"
-                    , "module": "TI1,TI2"
-                    , "raum": 3.223
-                    , "id": 12
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Svenja, Niedermeier"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI, WI"
-                    , "module": "BWL1"
-                    , "raum": 2.108
-                    , "id": 13
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Claudia, Müller"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI, WI"
-                    , "module": "BWL2"
-                    , "raum": 3.102
-                    , "id": 14
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Tom, Gutenberg"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI"
-                    , "module": "GDVK, WBA1"
-                    , "raum": 3.113
-                    , "id": 15
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Siegfried, Deisler"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI, WI"
-                    , "module": "DB1"
-                    , "raum": 2.002
-                    , "id": 16
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Sebastian, Bauer"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI, WI, AI"
-                    , "module": "AP2, CGA"
-                    , "raum": 3.203
-                    , "id": 17
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Erika, Neubach"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI"
-                    , "module": "AVM, MTP"
-                    , "raum": 3.118
-                    , "id": 18
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Tina, Lauterbach"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI"
-                    , "module": "BS"
-                    , "raum": 3.225
-                    , "id": 19
-                    , "kommentar": ""
-    }
-        , {
-                    "name": "Christina, Dietrich"
-                    , "fakultaet": 10
-                    , "studiengaenge": "MI"
-                    , "module": "MUG"
-                    , "raum": 3.221
-                    , "id": 20
-                    , "kommentar": ""
-    }
-
+        
 
   ]
         }
