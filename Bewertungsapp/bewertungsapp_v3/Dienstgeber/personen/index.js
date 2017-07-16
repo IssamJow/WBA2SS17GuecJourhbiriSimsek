@@ -1,5 +1,5 @@
 /*
-Wissenschaftlicher Mitarbeitern
+index für Personen
 */
 var express = require('express');
 var router = express.Router();
@@ -9,7 +9,7 @@ const ressourceName = "personen";
 router.get('/', function (req, res) {
     res.format({
         'application/json': function () {
-            const data = require('./Json/professoren.json');
+            const data = require('./Json/personen.json');
             res.send(data);
         }
     });
