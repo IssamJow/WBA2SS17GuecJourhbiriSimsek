@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "name": "Florian, Lehmann"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "email": "florian-lehmann@arcor.de"
+            , "passwort": "ab12cd34"
+            , "id": 31
+    }
+        , {
+            "name": "Jessica, Gans"
+            , "fakultaet": 10
+            , "studiengaenge": "WI"
+            , "email": "jessica-gans@web.de"
+            , "passwort": "321cba456"
+            , "id": 32
+    }
+        , {
+           "name": "Sven, Fischer"
+            , "fakultaet": 10
+            , "studiengaenge": "AI"
+            , "email": "sven-fischer@gmx.de"
+            , "passwort": "nevs99fisch"
+            , "id": 33
+    }
+        , {
+            "name": "Monika, Ernst"
+            , "fakultaet": 10
+            , "studiengaenge": "MI"
+            , "email": "EBR, TI, AP1"
+            , "passwort": "s1c2h3o4k5o"
+            , "id": 33
+    }
+
+        ]
+}
