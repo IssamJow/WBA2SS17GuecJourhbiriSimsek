@@ -1,3 +1,4 @@
+/*
         //extra zeile für merge zu loesen
         var fs = require('fs');
         var chalk = require('chalk');
@@ -57,3 +58,46 @@
             
      
         });
+*/
+
+
+var fs = require ('fs');
+var chalk = require ('chalk');
+
+var content;
+fs.readFile(__dirname+"/staedte.json",function read(err , data) {
+
+if (err) {
+	throw err;
+	}
+
+content = JSON.parse(data); // Der Variabel content werden die ausgelesenen Informationen der Datei hinzugewiesen.
+			   // Das Parse sorgt dafür, das die Informationen der Datei zu einem Objekt umgewandelt werden.
+
+
+content.cities.sort(function(a,b) {
+
+if(a.population < b.population) return 1;
+
+if(a.population > b.population) return -1;
+
+else return 0;
+
+});
+
+
+fs.writeFile(__dirname+"/staedte_sortiert.json",JSON.stringify(content),function(err) {
+
+if (err) throw err;
+
+for(i = 0; i < content.cities.length; i++) // Die For-Schleife dient hier zur strukturierten Ausgabe des Objektes.
+{
+        console.log("\nName: "+chalk.red(content.cities[i].name));               // Beispiel:  Name : Burj Khalifa
+	console.log("Stadt: "+chalk.cyan(content.cities[i].population));              //            Stadt: Dubai
+	console.log("Höhe: "+chalk.green(content.cities[i].country));	        //	      Höhe : 828
+	console.log("\n--------------------------------------");			//	      --------------------
+}
+
+
+});
+});
