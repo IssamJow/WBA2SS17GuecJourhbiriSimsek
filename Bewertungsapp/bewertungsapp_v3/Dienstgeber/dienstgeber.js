@@ -19,7 +19,7 @@ app.listen(settings.port, function(){
 
 app.get('/', function(req, res){
     res.send('Hello Nutzer');
-    res.writeHead(200, "OK");
+    
 }); 
 
 // catch 404 and forward to error handler
