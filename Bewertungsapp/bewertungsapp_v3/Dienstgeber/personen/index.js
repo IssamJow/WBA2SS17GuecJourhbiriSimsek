@@ -20,6 +20,7 @@ router.post('/', bodyParser.json(), function (req, res) {
 });
 router.get("/:personId", function (req, res) {
     res.send("Repräsentation eines person mit der ID: " + req.params.personId);
+    res.type('json').send(rep);
 });
 
 module.exports = router;
