@@ -80,6 +80,7 @@ var Review = mongoose.model('Review', {
             _id : req.params.review_id
         }, function(err, review) {
         res.json(review);
+            console.log("Review erfolgreich gelöscht")
         });
     });
  
