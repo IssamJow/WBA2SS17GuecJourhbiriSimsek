@@ -1,5 +1,5 @@
 /*
-index für Personen
+index für Ratings
 */
 var express = require('express');
 var router = express.Router();
@@ -62,10 +62,23 @@ function checkId(ratingId, ratingList) {
     }
     return temp;
 }
-router.get('bestof', function(req,res){
-    var ratingList = bestOf();
-    res.send(ratingList);
-})
+
+router.get('/bestof', function(req,res){
+    var ratingList = getRatingFromData();
+    var temp = ratingList[0].rating; 
+    var id = 0;
+    for(var i =0 ; i< ratingList.length; i++)
+        { 
+            if( ratingList[i].rating > temp)
+            {
+                id = ratingList[i];
+            }
+        }
+    
+    res.send(id);   
+    
+    
+});
 router.get('/', function (req, res) {
     var ratingList = getRatingFromData();
     res.send(ratingList);
