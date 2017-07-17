@@ -17,8 +17,7 @@ app.use(methodOverride());
 app.use(cors
         
         
-        
-        const settings = {
+const settings = {
         port: process.env.PORT || 8000
         };
  
