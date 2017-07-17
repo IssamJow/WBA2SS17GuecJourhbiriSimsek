@@ -37,7 +37,9 @@ var Review = mongoose.model('Review', {
 });
  
 // Routes
-    
+    app.get('/', function(req, res) {
+        res.send("Hallo babe");
+    });
     // Get reviews
     app.get('/api/reviews', function(req, res) {
  
