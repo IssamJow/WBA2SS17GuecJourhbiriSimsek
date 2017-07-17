@@ -12,12 +12,26 @@ router.get('/', function (req, res){
 router.get("/:id", function (req, res){
     var id = parseInt(req.params.id);
     
-    if (isNaN(id)) { res.status(400).json(data.errors.badParameters)}
+    if (isNaN(id)) { res.status(400).json(data.errors.badParameters)};
     //TODO sind noch hier dabei
-})
+    var user = data.users.filter(function(u) {
+        return u.id == id });
+    res.status(200).json(user);
+});
+
 router.post('/', bodyParser.json(), function (req, res) {
-    console.log(req.body);
-    res.status(200).json( {uri: req.protocol+"://" + req.headers.host + "/"+ressourceName+"/"+req.body.id});
+    if(data.validateUser(req.body)) {
+        req.body.id = data.newUserId();
+        
+        data.users.push(req.body);
+        res.status(200).json( { uri: req.protocol+"://" + req.headers.host + "/"+ressourceName+"/"+req.body.id})
+    }
+    else {
+        res.status(400).json(data.erros.badPayload);
+    }
+    
+    
+    
 });
 
 router.get("/:userId", function (req, res) {
