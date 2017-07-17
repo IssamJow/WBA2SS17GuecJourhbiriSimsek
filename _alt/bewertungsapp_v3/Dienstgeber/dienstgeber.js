@@ -7,15 +7,15 @@ var fs = require('fs');
 
 var app = express();
 var settings = {
-    port: 3000,
-    datafile: "./Json/testdata.json"
+    port: 3000
+    
 };
-global.data = require("./data");
 
-const users = require('./user/index');
+
+
 const personen = require('./personen/index');
 app.use("/personen", personen);
-app.use("/users", users);
+
 
 
 app.listen(settings.port, function(){
