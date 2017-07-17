@@ -37,9 +37,9 @@ var Review = mongoose.model('Review', {
 });
  
 // Routes
- 
+    
     // Get reviews
-    app.get('/reviews', function(req, res) {
+    app.get('/api/reviews', function(req, res) {
  
         console.log("fetching reviews");
  
@@ -55,7 +55,7 @@ var Review = mongoose.model('Review', {
     });
  
     // create review and send back all reviews after creation
-    app.post('/reviews', function(req, res) {
+    app.post('/api/reviews', function(req, res) {
  
         console.log("creating review");
  
@@ -81,7 +81,7 @@ var Review = mongoose.model('Review', {
     });
  
     // delete a review
-    app.delete('/reviews/:review_id', function(req, res) {
+    app.delete('/api/reviews/:review_id', function(req, res) {
         Review.remove({
             _id : req.params.review_id
             
