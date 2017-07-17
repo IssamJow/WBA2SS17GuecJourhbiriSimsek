@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 import { NavController, ModalController } from 'ionic-angular';
-import { AddReview } from '../add-review/add-review';
+import { AddReviewPage } from '../add-review-page/add-review-page';
 import { Reviews } from '../../providers/reviews';
+import { BrowserModule }  from '@angular/platform-browser';
  
 @Component({
   selector: 'home-page',
@@ -26,7 +27,7 @@ export class HomePage {
  
   addReview(){
  
-    let modal = this.modalCtrl.create(AddReview);
+    let modal = this.modalCtrl.create(AddReviewPage);
  
     modal.onDidDismiss(review => {
       if(review){
