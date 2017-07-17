@@ -4,7 +4,8 @@
   "description": "Package json fuer wba2",
   "main": "code.js",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "redis": "^2.7.1"
   },
   "devDependencies": {},
   "scripts": {
