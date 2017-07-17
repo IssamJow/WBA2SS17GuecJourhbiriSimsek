@@ -79,11 +79,11 @@ var Review = mongoose.model('Review', {
         Review.remove({
             _id : req.params.review_id
         }, function(err, review) {
- 
+        res.json(review);
         });
     });
  
  
 // listen (start app with node server.js) ======================================
 app.listen(8000);
-console.log("App listening on port 8080");
+console.log("App listening on port 8000");
