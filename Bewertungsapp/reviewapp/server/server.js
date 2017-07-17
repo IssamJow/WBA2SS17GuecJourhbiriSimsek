@@ -9,7 +9,6 @@ var cors = require('cors');
  
 // Configuration
 mongoose.connect('mongodb://localhost/reviewapp');
- 
 app.use(morgan('dev'));                                         // log every request to the console
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
 app.use(bodyParser.json());                                     // parse application/json
@@ -85,5 +84,5 @@ var Review = mongoose.model('Review', {
  
  
 // listen (start app with node server.js) ======================================
-app.listen(8080);
-console.log("App listening on port 8080");
+app.listen(8000);
+console.log("App listening on port 8000");
