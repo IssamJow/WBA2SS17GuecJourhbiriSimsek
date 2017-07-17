@@ -14,7 +14,13 @@ app.use(bodyParser.urlencoded({'extended':'true'}));            // parse applica
 app.use(bodyParser.json());                                     // parse application/json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 app.use(methodOverride());
-app.use(cors());
+app.use(cors
+        
+        
+        
+        const settings = {
+        port: process.env.PORT || 8000
+        };
  
 app.use(function(req, res, next) {
    res.header("Access-Control-Allow-Origin", "*");
@@ -34,7 +40,7 @@ var Review = mongoose.model('Review', {
 // Routes
  
     // Get reviews
-    app.get('/api/reviews', function(req, res) {
+    app.get('/reviews', function(req, res) {
  
         console.log("fetching reviews");
  
@@ -50,7 +56,7 @@ var Review = mongoose.model('Review', {
     });
  
     // create review and send back all reviews after creation
-    app.post('/api/reviews', function(req, res) {
+    app.post('/reviews', function(req, res) {
  
         console.log("creating review");
  
@@ -76,12 +82,13 @@ var Review = mongoose.model('Review', {
     });
  
     // delete a review
-    app.delete('/api/reviews/:review_id', function(req, res) {
+    app.delete('/reviews/:review_id', function(req, res) {
         Review.remove({
             _id : req.params.review_id
             
         }, function(err, review) {
-            res.json(reviews);
+            res.send("Erfolgreich gelöscht");
+            //res.json(reviews);
                 
        
             
@@ -90,5 +97,5 @@ var Review = mongoose.model('Review', {
  
  
 // listen (start app with node server.js) ======================================
-app.listen(8000);
+app.listen(settings.port);
 console.log("App listening on port 8000");
