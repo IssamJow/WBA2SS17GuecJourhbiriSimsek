@@ -25,6 +25,7 @@ app.use(function(req, res, next) {
  
 // Models
 var Review = mongoose.model('Review', {
+    id: Number,
     title: String,
     description: String,
     rating: Number
@@ -55,6 +56,7 @@ var Review = mongoose.model('Review', {
  
         // create a review, information comes from request from Ionic
         Review.create({
+            
             title : req.body.title,
             description : req.body.description,
             rating: req.body.rating,
@@ -77,8 +79,12 @@ var Review = mongoose.model('Review', {
     app.delete('/api/reviews/:review_id', function(req, res) {
         Review.remove({
             _id : req.params.review_id
+            
         }, function(err, review) {
- 
+            res.json(reviews);
+                
+       
+            
         });
     });
  
