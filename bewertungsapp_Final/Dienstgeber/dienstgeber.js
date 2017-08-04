@@ -23,7 +23,7 @@ app.listen(settings.port, function(){
 });
 
 app.get('/', function(req, res){
-    res.send('Hello Nutzer');
+    res.send('Hello Nutzer fick euch alle');
     
 }); 
 
