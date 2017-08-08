@@ -79,6 +79,32 @@ router.get('/bestof', function(req,res){
     
     
 });
+router.get('/worstof', function(req,res){
+    var ratingList = getRatingFromData();
+    var temp2 = ratingList[0].rating; 
+    var id2 = 0;
+    for(var i =0 ; i< ratingList.length; i++)
+        { 
+            if( ratingList[i].rating <= temp2)
+            {
+                id2 = ratingList[i];
+            }
+        }
+    
+    res.send(id2);   
+    
+    
+});
+//kann noch sauberer geschrieben werden
+router.get('/latest', function(req,res){
+    var ratingList = getRatingFromData();
+    var temp = ratingList.length;
+    
+    res.send(ratingList[temp-1]);
+    
+   
+});
+
 router.get('/', function (req, res) {
     var ratingList = getRatingFromData();
     res.send(ratingList);
