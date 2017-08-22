@@ -19,7 +19,7 @@ function getRatingFromData() {
   
     var tempContent = content.substr(0, content.length -1);
     var contentObjekt = "[" + tempContent + "]";
-    //console.log(tempContent);
+    //  console.log(tempContent);
     return JSON.parse(contentObjekt);
 }
 
@@ -96,6 +96,7 @@ router.get('/worstof', function(req,res){
     
 });
 //kann noch sauberer geschrieben werden
+
 router.get('/latest', function(req,res){
     var ratingList = getRatingFromData();
     var temp = ratingList.length;
@@ -104,6 +105,7 @@ router.get('/latest', function(req,res){
     
    
 });
+
 
 router.get('/', function (req, res) {
     var ratingList = getRatingFromData();
