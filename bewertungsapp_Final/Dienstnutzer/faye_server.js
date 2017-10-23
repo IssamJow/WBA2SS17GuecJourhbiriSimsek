@@ -6,7 +6,7 @@
 var server = http.createServer();
 
 //Node Adapter
-var fayeservice = new faye.NodeAdapter( {
+var fayeservice = new faye.NodeAdapter({
     mount: '/faye',
     timeout: 50
 

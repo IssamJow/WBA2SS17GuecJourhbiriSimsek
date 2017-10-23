@@ -117,7 +117,7 @@ router.get('/:id', function(req, res) {
     var check = checkId(ratingId, ratingList);
     
     if( check == false){
-      res.send("Rating mit der id " + ratingId + " ist nicht vorhanden");
+      res.status(404).send("Rating mit der id " + ratingId + " ist nicht vorhanden");
     }
     else 
         {
